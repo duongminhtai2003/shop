@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	 <definition name="shop.admin.layout" template="/WEB-INF/templates/admin/inc/master.jsp">
+	 	<put-attribute name="title" value="Home - Cland [Vinaenter EDU]" />
+	 	<put-attribute name="header" value="/WEB-INF/templates/admin/inc/header.jsp" />
+	 	<put-attribute name="sidebar" value="/WEB-INF/templates/admin/inc/sidebar.jsp" />
+	 	<put-attribute name="content" value="" />
+	 	<put-attribute name="footer" value="/WEB-INF/templates/admin/inc/footer.jsp" />
+	 	<put-attribute name="js" value="" />
+	 	<put-attribute name="stylesheets" value="" />
+	 </definition>
+	
+	
+	 <definition name="shop.admin.index" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/index/index.jsp" />
+	 	<put-attribute name="stylesheets" value="/WEB-INF/views/admin/index/putstyle.jsp" />
+	 	<put-attribute name="js" value="/WEB-INF/views/admin/index/putjs.jsp" />
+	 </definition>
+	 
+	 <!-- ***************************************************************** -->
+	 <definition name="shop.admin.cat.index" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/cat/index.jsp" />
+	 </definition>
+	 
+	 <definition name="shop.admin.cat.add" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/cat/add.jsp" />
+	 </definition>
+	 
+	  <definition name="shop.admin.cat.edit" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/cat/edit.jsp" />
+	 </definition>
+	  <!-- ***************************************************************** -->
+	 <definition name="shop.admin.bill.index" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/bill/index.jsp" />
+	 </definition>
+	
+	 
+	  <definition name="shop.admin.bill.edit" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/bill/edit.jsp" />
+	 </definition>
+	  <!-- ***************************************************************** -->
+	 <definition name="shop.admin.pay.index" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/payment/index.jsp" />
+	 </definition>
+	 
+	 <definition name="shop.admin.pay.add" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/payment/add.jsp" />
+	 </definition>
+	 
+	  <definition name="shop.admin.pay.edit" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/payment/edit.jsp" />
+	 </definition>
+	 
+	  <!-- ***************************************************************** -->
+	 	 <definition name="shop.admin.user.index" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/user/index.jsp" />
+	 </definition>
+	 
+	 <definition name="shop.admin.user.add" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/user/add.jsp" />
+	 </definition>
+	 
+	  <definition name="shop.admin.user.edit" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/user/edit.jsp" />
+	 </definition>
+
+	 <!-- ***************************************************************** -->
+	 	 <definition name="shop.admin.price.index" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/price/index.jsp" />
+	 </definition>
+	 
+	 <definition name="shop.admin.price.add" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/price/add.jsp" />
+	 </definition>
+	 
+	  <definition name="shop.admin.price.edit" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/price/edit.jsp" />
+	 </definition>
+	 	 
+	 <!-- ***************************************************************** -->
+	 	 <definition name="shop.admin.product.index" extends="shop.admin.layout" >
+	 		<put-attribute name="content" value="/WEB-INF/views/admin/product/index.jsp" />
+		 </definition>
+		  <definition name="shop.admin.product.search" extends="shop.admin.layout" >
+	 		<put-attribute name="content" value="/WEB-INF/views/admin/product/search.jsp" />
+		 </definition>
+	 
+	 <definition name="shop.admin.product.add" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/product/add.jsp" />
+	 </definition>
+	 
+	  <definition name="shop.admin.product.edit" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/product/edit.jsp" />
+	 </definition>
+	 	 <!-- ***************************************************************** -->
+	 	 <definition name="shop.admin.contact.index" extends="shop.admin.layout" >
+	 		<put-attribute name="content" value="/WEB-INF/views/admin/contact/index.jsp" />
+		 </definition>
+		 <!-- ***************************************************************** -->
+		 
+	 	 <definition name="shop.auth.login" template="/WEB-INF/views/auth/login.jsp"/>
+	 	 
+	 	<definition name="403" template="/WEB-INF/views/auth/403.jsp"/> 
+	 	
+	 	<definition name="editInfo" extends="shop.admin.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/admin/user/editInfo.jsp" />
+	 </definition>
+	 
+	 
+</tiles-definitions>

@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/main/java/edu/vinaenter/controller/user/PublicController.java=UTF-8
+encoding//src/main/java/edu/vinaenter/controllers/admins/AdminBillController.java=UTF-8
+encoding//src/main/java/edu/vinaenter/controllers/admins/AdminProductController.java=UTF-8
+encoding//src/main/java/edu/vinaenter/dto/ProductDto.java=UTF-8
+encoding//src/main/java/edu/vinaenter/models/User.java=UTF-8
+encoding//src/main/webapp/WEB-INF/views/create/index.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/login/index.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/views/shop/order.jsp=UTF-8

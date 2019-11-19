@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	 <definition name="shop.public.layout" template="/WEB-INF/templates/shop/inc/master.jsp">
+	 	<put-attribute name="header" value="/WEB-INF/templates/shop/inc/header.jsp" />
+	 	<put-attribute name="content" value="" />
+	 	<put-attribute name="rightbar" value="/WEB-INF/templates/shop/inc/rightbar.jsp" />
+	 	<put-attribute name="footer" value="/WEB-INF/templates/shop/inc/footer.jsp" />
+	 </definition>
+	  <definition name="shop.public.layout2" template="/WEB-INF/templates/shop/inc/master2.jsp">
+	 	<put-attribute name="header" value="/WEB-INF/templates/shop/inc/header.jsp" />
+	 	<put-attribute name="content" value="" />
+	 	<put-attribute name="footer" value="/WEB-INF/templates/shop/inc/footer.jsp" />
+	 </definition>
+	
+	
+	 <!-- name_project.name_class.name_method -->
+	 <definition name="shop.public.index" extends="shop.public.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/shop/index.jsp" />
+	 </definition>
+	 <definition name="shop.public.cat" extends="shop.public.layout" >
+	 	<put-attribute name="content" value="/WEB-INF/views/shop/cat.jsp" />
+	 </definition>
+	 <definition name="shop.public.cart" extends="shop.public.layout2" >
+	 	<put-attribute name="content" value="/WEB-INF/views/shop/cart.jsp" />
+	 </definition>
+	 <definition name="shop.public.orderlist" extends="shop.public.layout2" >
+	 	<put-attribute name="content" value="/WEB-INF/views/shop/orderlist.jsp" />
+	 </definition>
+	  <definition name="shop.public.product" extends="shop.public.layout2" >
+	 	<put-attribute name="content" value="/WEB-INF/views/shop/product.jsp" />
+	 </definition>
+	 
+	 	<definition name="shop.displayCart" template="/WEB-INF/views/shop/order.jsp" />
+	 	
+	 	<definition name="shop.login" template="/WEB-INF/views/login/index.jsp" />
+	 	<definition name="shop.createaccount" template="/WEB-INF/views/create/index.jsp" />
+	 
+</tiles-definitions>
